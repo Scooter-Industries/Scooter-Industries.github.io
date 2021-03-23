@@ -30,6 +30,9 @@
     font-family: "Burbank Big Condensed", serif;
     font-size: 2em;
 }
+
+
+
 #discord:hover {
     background-color: white;
 }
@@ -54,6 +57,21 @@ h1, h2{
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
 }
+h3 {
+    font-size: 5em;
+    color: rgb(255, 255, 255);
+    animation-name: warning;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+h3 {
+    font-size: 3em;
+    font-family: "Burbank Big Condensed", serif;
+    color: white;
+    text-align: center;
+}
+
 
 .alerting {
     font-size: 5em;
