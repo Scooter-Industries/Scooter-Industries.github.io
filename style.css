@@ -5,11 +5,27 @@
 }
 @keyframes warning {
     0% {color: red; font-size: 4.5em;}
-    50% {color: orangered; font-size: 5em;}
+    50% {color: rgb(255, 102, 0); font-size: 5em;}
     100% {color: red; font-size: 4.5em;}
 }
 
-
+#discord {
+    margin: 0 auto;
+    padding: 50px 100px;
+    width: 50%;
+    text-align: center;
+    display: block;
+    border: #7289DA 10px solid;
+    border-radius: 30px;
+    color:#1E2124;
+    background-color: #7289DA;
+    transition: background-color 1s;
+    font-family: "Burbank Big Condensed", serif;
+    font-size: 2em;
+}
+#discord:hover {
+    background-color: white;
+}
 
 body {
     background-color: DarkOrchid;
