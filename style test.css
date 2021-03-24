@@ -1,0 +1,57 @@
+@font-face {
+    font-family: "Burbank Big Condensed"; 
+    src: url("//db.onlinewebfonts.com/t/cdc8c3de1e6bd5a9a67c6a001f9fedd0.eot"); 
+    src: url("//db.onlinewebfonts.com/t/cdc8c3de1e6bd5a9a67c6a001f9fedd0.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/cdc8c3de1e6bd5a9a67c6a001f9fedd0.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/cdc8c3de1e6bd5a9a67c6a001f9fedd0.woff") format("woff"), url("//db.onlinewebfonts.com/t/cdc8c3de1e6bd5a9a67c6a001f9fedd0.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/cdc8c3de1e6bd5a9a67c6a001f9fedd0.svg#Burbank Big Condensed") format("svg"); 
+}
+
+
+.discord {
+    text-align: center;
+    display: inline-block;
+    padding: 50px;
+    margin: 20px;
+
+    border: #7289DA 10px solid;
+    border-radius: 30px;
+    color:#1E2124;
+    background-color: #7289DA;
+    transition: background-color 0.5s;
+    font-size: 4em;
+}
+
+
+
+.discord:hover {
+    background-color: white;
+    color: #1E2124;
+}
+
+body {
+    background-color: DarkOrchid;
+    background-image: linear-gradient(to left, rgb(2, 103, 155), DarkOrchid);
+    text-align: center;
+    font-family: "Burbank Big Condensed", serif;
+    color: white;
+    
+}
+h1{
+    font-size: 5em;
+}
+h2 {
+    font-size: 4em;
+    background-color: rebeccapurple;
+    width: 500px;
+    border: white solid 10px;
+    border-radius: 10px;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+h3 {
+    font-size: 3em;
+}
+
+
+#progress {
+    border: white dotted 20px;
+}
