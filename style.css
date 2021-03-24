@@ -61,4 +61,5 @@ img {
     margin: 10px auto;
     display: block;
     width: 100%;
+    max-width: 600px;
 }
