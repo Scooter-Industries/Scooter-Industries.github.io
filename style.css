@@ -28,7 +28,7 @@
 
 body {
     background-color: DarkOrchid;
-    background-image: linear-gradient(to left, rgb(44, 9, 77), DarkOrchid);
+    background-image: linear-gradient(to left, rgb(2, 103, 155), DarkOrchid);
 }
 h1, h2{
     font-size: 4em;
