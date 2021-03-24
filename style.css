@@ -3,18 +3,7 @@
     src: url("//db.onlinewebfonts.com/t/cdc8c3de1e6bd5a9a67c6a001f9fedd0.eot"); 
     src: url("//db.onlinewebfonts.com/t/cdc8c3de1e6bd5a9a67c6a001f9fedd0.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/cdc8c3de1e6bd5a9a67c6a001f9fedd0.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/cdc8c3de1e6bd5a9a67c6a001f9fedd0.woff") format("woff"), url("//db.onlinewebfonts.com/t/cdc8c3de1e6bd5a9a67c6a001f9fedd0.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/cdc8c3de1e6bd5a9a67c6a001f9fedd0.svg#Burbank Big Condensed") format("svg"); 
 }
-@keyframes warning {
-    0% {color: red; font-size: 4.5em;}
-    50% {color: rgb(255, 102, 0); font-size: 5em;}
-    100% {color: red; font-size: 4.5em;}
 
-}
-@keyframes warning {
-    0% {font-size: 4.5em;}
-    50% {font-size: 5em;}
-    100% {font-size: 4.5em;}
-
-}
 
 #discord {
     margin: 0 auto;
@@ -26,7 +15,7 @@
     border-radius: 30px;
     color:#1E2124;
     background-color: #7289DA;
-    transition: background-color 0.3s;
+    transition: background-color 0.5s;
     font-family: "Burbank Big Condensed", serif;
     font-size: 4em;
 }
@@ -40,31 +29,14 @@
 body {
     background-color: DarkOrchid;
     background-image: linear-gradient(to left, rgb(44, 9, 77), DarkOrchid);
+}
+h1, h2{
+    font-size: 4em;
     font-family: "Burbank Big Condensed", serif;
     color: white;
     text-align: center;
 }
-h1, h2{
-    font-size: 5em;
-    
-    
-}
-.alerting {
-    font-size: 5em;
-    color: red;
-    animation-name: warning;
-    animation-duration: 1s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-}
-h3 {
-    font-size: 5em;
-    color: rgb(255, 255, 255);
-    animation-name: warning;
-    animation-duration: 1s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-}
+
 h3 {
     font-size: 3em;
     font-family: "Burbank Big Condensed", serif;
@@ -72,15 +44,6 @@ h3 {
     text-align: center;
 }
 
-
-.alerting {
-    font-size: 5em;
-    color: white;
-    animation-name: warning;
-    animation-duration: 1s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-}
 
 #progress {
     border: white dotted 2px;
