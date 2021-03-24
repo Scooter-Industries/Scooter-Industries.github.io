@@ -1,0 +1,30 @@
+}
+@keyframes warning {
+    0% {color: red; font-size: 4.5em;}
+    50% {color: rgb(255, 102, 0); font-size: 5em;}
+    100% {color: red; font-size: 4.5em;}
+}
+
+
+----------------------------------------------
+
+
+
+
+}
+h2 {
+    font-size: 5em;
+    color: red;
+    animation-name: warning;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+h3 {
+    font-size: 5em;
+    color: rgb(255, 255, 255);
+    animation-name: warning;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
