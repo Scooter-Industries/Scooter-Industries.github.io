@@ -17,6 +17,8 @@
     background-color: #7289DA;
     transition: background-color 0.5s;
     font-size: 4em;
+    color: white;
+    transition: color 0.5s;
 }
 
 
