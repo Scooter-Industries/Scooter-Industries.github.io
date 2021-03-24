@@ -5,50 +5,55 @@
 }
 
 
-#discord {
-    margin: 0 auto;
-    padding: 50px 100px;
-    width: 20%;
+.discord {
     text-align: center;
-    display: block;
+    display: inline-block;
+    padding: 50px;
+    margin: 20px;
+
     border: #7289DA 10px solid;
     border-radius: 30px;
     color:#1E2124;
     background-color: #7289DA;
     transition: background-color 0.5s;
-    font-family: "Burbank Big Condensed", serif;
     font-size: 4em;
+    color: white;
+    transition: color 0.5s;
 }
 
 
 
-#discord:hover {
+.discord:hover {
     background-color: white;
+    color: #1E2124;
 }
 
 body {
     background-color: DarkOrchid;
     background-image: linear-gradient(to left, rgb(2, 103, 155), DarkOrchid);
-}
-h1, h2{
-    font-size: 4em;
+    text-align: center;
     font-family: "Burbank Big Condensed", serif;
     color: white;
-    text-align: center;
+    
+}
+h1{
+    font-size: 5em;
+}
+h2 {
+    font-size: 4em;
+    background-color: rebeccapurple;
+    width: 500px;
+    border: white solid 10px;
+    border-radius: 10px;
+    margin: 10px auto;
+    padding: 10px;
 }
 
 h3 {
     font-size: 3em;
-    font-family: "Burbank Big Condensed", serif;
-    color: white;
-    text-align: center;
 }
 
-img {
-    margin: 0 auto;
-    width: 744px;
-}
 
 #progress {
-    border: white dotted 2px;
+    border: white dotted 20px;
 }
