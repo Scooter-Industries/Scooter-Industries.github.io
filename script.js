@@ -8,15 +8,9 @@ $(document).ready(function() {
             $("#lastUpdated").text("Last Updated: "+lastUpdate)
         };
     });
-    $.get("https://fn-api.com/api/shop_categories", function(data, status) {
+    $.get("https://fort-api.com/shop/sections", function(data, status) {
         if (status == "success"){
-            var sectionList = "";
-            for (sectionDict in data["shopCategories"]){
-                for (sectionName in sectionDict["sectionList"]){
-                    sectionList = sectionList + `\n${sectionName}`
-                }
-            }
-            $("sections").text("Currently Active:" + sectionList)
+            $("#sections").html(data.join("<br>"));
         };
     });
 });
