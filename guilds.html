@@ -22,7 +22,7 @@
             if (code.length > 0) {
                 fetch('https://discord.com/api/users/@me', {
                     headers: {
-                        "Authorization": `Bearer ${code}`
+                        Authorization: `Bearer ${code}`
                     }
                 })
                     .then(res => res.json())
