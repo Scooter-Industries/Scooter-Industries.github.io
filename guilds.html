@@ -32,14 +32,12 @@
 					.then(res => res.json())
 					.then(response => {
 						const { username, discriminator } = response;
-						document.getElementById('info').innerText += ` ${username}#${discriminator}`;
+						document.getElementById('data').innerText += ` ${username}#${discriminator}`;
 					})
 					.catch(console.error);
 
 			}
-			else {
-				document.getElementById('login').style.display = 'block';
-			}
+			
 		}
         </script>
     </body>
