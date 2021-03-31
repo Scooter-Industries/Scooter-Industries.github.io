@@ -18,15 +18,13 @@
         <h2 id="data"></h2>
         <script>
         window.onload = function() {
-			const fragment = new URLSearchParams(window.location.search.slice(1));
+			const code = window.location.search.slice(6);
 
-			if (fragment.has("access_token")) {
-				const accessToken = fragment.get("access_token");
-				const tokenType = fragment.get("token_type");
+			if (code.length > 0) {
 
 				fetch('https://discord.com/api/users/@me', {
 					headers: {
-						authorization: `${tokenType} ${accessToken}`
+						Authorization: `Bearer ${code}`
 					}
 				})
 					.then(res => res.json())
