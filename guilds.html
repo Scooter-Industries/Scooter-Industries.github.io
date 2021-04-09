@@ -1,51 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="og:title" content="Scooter Industries">
-        <meta name="og:url" content="https://scooter-industries.github.io/guilds">
-        <meta name="og:description" content="The Scooter Industries Website!    Fortnite Leaks Site">
-        <meta property="og:image" content="https://scooter-industries.github.io/unknown.png">
-        <meta property="og:image:height" content="476">
-        <meta property="og:image:width" content="562">
-        <meta name="theme-color" content="#018AF1">
-        <title>Scooter Industries</title>
-        <link rel="shortcut icon" href="./favicon.ico">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-        <link href="./style.css" type="text/css" rel="stylesheet">
-    </head>
-    <body>
-        <div id="servers"></div>
-        <h1><a id="login" style="display: none;" href="https://discord.com/api/oauth2/authorize?client_id=813832912067362827&redirect_uri=https%3A%2F%2Fscooter-industries.github.io%2Fguilds&response_type=token&scope=guilds%20identify">Login</a></h1>
-        <script>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="og:title" content="Scooter Industries">
+    <meta name="og:url" content="https://scooter-industries.github.io/guilds">
+    <meta name="og:description" content="The Scooter Industries Website!    Fortnite Leaks Site">
+    <meta property="og:image" content="https://scooter-industries.github.io/unknown.png">
+    <meta property="og:image:height" content="476">
+    <meta property="og:image:width" content="562">
+    <meta name="theme-color" content="#018AF1">
+    <title>Scooter Industries</title>
+    <link rel="shortcut icon" href="./favicon.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href="./style.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="servers"></div>
+    <h1><a id="login" style="display: none;"
+            href="https://discord.com/api/oauth2/authorize?client_id=813832912067362827&redirect_uri=https%3A%2F%2Fscooter-industries.github.io%2Fguilds&response_type=token&scope=guilds%20identify">Login</a>
+    </h1>
+    <script>
         window.onload = () => {
-			const fragment = new URLSearchParams(window.location.hash.slice(1));
+            const fragment = new URLSearchParams(window.location.hash.slice(1));
 
-			if (fragment.has("access_token")) {
-				const accessToken = fragment.get("access_token");
-				const tokenType = fragment.get("token_type");
+            if (fragment.has("access_token")) {
+                const accessToken = fragment.get("access_token");
+                const tokenType = fragment.get("token_type");
 
-				fetch('https://discord.com/api/users/@me/guilds', {
-					headers: {
-						authorization: `${tokenType} ${accessToken}`
-					}
-				})
-					.then(res => res.json())
-					.then(response => {
-                        for (let guildNum in response){
+                fetch('https://discord.com/api/users/@me/guilds', {
+                    headers: {
+                        authorization: `${tokenType} ${accessToken}`
+                    }
+                })
+                    .then(res => res.json())
+                    .then(response => {
+                        for (let guildNum in response) {
                             console.log(response[guildNum].name);
                             guild = document.createElement("p");
                             guild.innerHTML = response[guildNum].name;
                             document.getElementById("servers").appendChild(guild)
                         };
-					})
-					.catch(console.error);
+                    })
+                    .catch(console.error);
 
-			}
-			else {
-				document.getElementById('login').style.display = 'block';
-			}
-		}
-        </script>
-    </body>
+            }
+            else {
+                document.getElementById('login').style.display = 'block';
+            }
+        }
+    </script>
+</body>
+
 </html>
