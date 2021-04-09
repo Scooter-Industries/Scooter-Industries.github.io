@@ -32,9 +32,11 @@
 				})
 					.then(res => res.json())
 					.then(response => {
-                        for (let guild in response){
-                            console.log(response[guild].name);
-                        }
+                        for (let guildNum in response){
+                            console.log(response[guildNum].name);
+                            guild = document.createElement("p");
+                            guild.innerHTML = response[guildNum].name;
+                        };
 					})
 					.catch(console.error);
 
