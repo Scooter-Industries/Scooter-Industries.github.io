@@ -33,7 +33,7 @@
 					.then(res => res.json())
 					.then(response => {
                         for (let guild in response){
-                            console.log(guild.name);
+                            console.log(response[guild].name);
                         }
 					})
 					.catch(console.error);
