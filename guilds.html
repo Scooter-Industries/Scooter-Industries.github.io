@@ -36,6 +36,7 @@
                             console.log(response[guildNum].name);
                             guild = document.createElement("p");
                             guild.innerHTML = response[guildNum].name;
+                            document.getElementById("servers").appendChild(guild)
                         };
 					})
 					.catch(console.error);
