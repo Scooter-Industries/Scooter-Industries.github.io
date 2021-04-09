@@ -15,7 +15,7 @@
         <link href="./style.css" type="text/css" rel="stylesheet">
     </head>
     <body>
-        <h2 id="data"></h2>
+        <div id="servers"></div>
         <h1><a id="login" style="display: none;" href="https://discord.com/api/oauth2/authorize?client_id=813832912067362827&redirect_uri=https%3A%2F%2Fscooter-industries.github.io%2Fguilds&response_type=token&scope=guilds%20identify">Login</a></h1>
         <script>
         window.onload = () => {
@@ -32,7 +32,9 @@
 				})
 					.then(res => res.json())
 					.then(response => {
-						console.log(response);
+                        for (let guild in response){
+                            console.log(guild.name);
+                        }
 					})
 					.catch(console.error);
 
