@@ -37,7 +37,7 @@
                     .then(res => res.json())
                     .then(response => {
                         for (let guildNum in response) {
-                            console.log(response.guildNum.name);
+                            console.log(response[guildNum].name);
                             if (0x8 & response[guildNum].permissions || 0x20 & response[guildNum].permissions) {
                                 let guild = document.createElement("a");
                                 guild.innerHTML = response.guildNum.name;
