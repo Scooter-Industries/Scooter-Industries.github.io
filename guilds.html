@@ -38,10 +38,12 @@
                     .then(response => {
                         for (let guildNum in response) {
                             console.log(response[guildNum].name);
-                            guild = document.createElement("a");
+                            let guild = document.createElement("a");
                             guild.innerHTML = response[guildNum].name;
-                            guild.setAttribute("href", "https://discord.com/api/oauth2/authorize?client_id=813832912067362827&permissions=8&redirect_uri=https%3A%2F%2Fscooter-industries.github.io%2Fguilds&scope=bot&guild_id="+response[guildNum].id)
+                            guild.setAttribute("href", "https://discord.com/api/oauth2/authorize?client_id=813832912067362827&permissions=8&redirect_uri=https%3A%2F%2Fscooter-industries.github.io%2Fguilds&scope=bot&guild_id="+response[guildNum].id);
                             document.getElementById("servers").appendChild(guild);
+                            let br = document.createElement("br");
+                            document.getElementById("servers").appendChild(br)
                         };
                     })
                     .catch(console.error);
