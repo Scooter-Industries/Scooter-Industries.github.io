@@ -16,7 +16,7 @@
     </head>
     <body>
         <h2 id="data"></h2>
-        <h1><a id="login" style="display: none;" href="https://discord.com/api/oauth2/authorize?client_id=813832912067362827&redirect_uri=https%3A%2F%2Fscooter-industries.github.io%2Fguilds&response_type=token&scope=identify">Login</a></h1>
+        <h1><a id="login" style="display: none;" href="https://discord.com/api/oauth2/authorize?client_id=813832912067362827&redirect_uri=https%3A%2F%2Fscooter-industries.github.io%2Fguilds&response_type=token&scope=guilds%20identify">Login</a></h1>
         <script>
         window.onload = () => {
 			const fragment = new URLSearchParams(window.location.hash.slice(1));
@@ -25,15 +25,14 @@
 				const accessToken = fragment.get("access_token");
 				const tokenType = fragment.get("token_type");
 
-				fetch('https://discord.com/api/users/@me', {
+				fetch('https://discord.com/api/users/@me/guilds', {
 					headers: {
 						authorization: `${tokenType} ${accessToken}`
 					}
 				})
 					.then(res => res.json())
 					.then(response => {
-						const { username, discriminator } = response;
-						document.getElementById('data').innerText += ` ${username}#${discriminator}`;
+						document.getElementById('data').innerText = response;
 					})
 					.catch(console.error);
 
